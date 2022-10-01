@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Quicksand:wght@500&display=swap');
+
 .mobile-width {
   max-width: 350px;
   margin: 0 auto;
@@ -52,32 +54,33 @@
   margin-bottom: -25px;
 }
 
-  /* 
 .history-container {
   width: 100%;
   background-color: #193A20;
   padding-bottom: 20px;
-  .history-wrapper {
-    padding: 0 30px;
-  }
-  h2 {
-    font-family: 'Domine';
-    align-items: center;
-    font-size: 24px;
-    line-height: 30px;
-    color: #9C8034;
-    padding: 50px 0 20px;
-    text-align: center;
-  }
-  p {
-    font-family: 'Quicksand';
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 5px;
-  }
+}
 
+.history-wrapper {
+  padding: 0 30px;
+}
+
+.history-wrapper h2 {
+  font-family: 'Domine';
+  align-items: center;
+  font-size: 24px;
+  line-height: 30px;
+  color: #9C8034;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.history-wrapper p {
+  font-family: 'Quicksand';
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
 }
 
 .carroussel-container {
@@ -86,40 +89,47 @@
   background-color: #f6d891;
 }
 
+
 .production-container {
   width: 100%;
-  .production-wrapper{
-    display: block;
-    .production-text {
-      text-align: center;
-      padding: 30px;
-      h2 {
-        font-family: 'Domine';
-        font-size: 24px;
-        line-height: 28px;
-        font-weight: 400;
-        color: #9C8034;
-      }
-      p {
-        font-family: 'Quicksand';
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 500;
-        color: #561717
-      }
-    }
-    .production-logos {
-      padding: 0 20px 40px;
-      
-      display: flex;
-      justify-content: space-around;
-      img {
-        width: 60px;
-      }
-    }
-  }
 }
 
+.production-wrapper{
+  display: block;
+}
+    
+.production-text {
+  text-align: center;
+  padding: 30px;
+}
+
+.production-text h2 {
+  font-family: 'Domine';
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #9C8034;
+}
+
+.production-text p {
+  font-family: 'Quicksand';
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #561717
+}
+    
+.production-logos {
+  padding: 0 20px 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.production-logos img {
+    width: 60px;
+  }
+
+ /* 
 .footer-container {
   width: 100%;
   background-color: #41311A;
