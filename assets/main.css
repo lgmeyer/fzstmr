@@ -208,7 +208,7 @@ html {
 }
 
 .footer-contact{
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .footer-contact--title{
@@ -226,7 +226,7 @@ html {
   display: flex;
   justify-content: space-between;
   font-family: 'Quicksand';
-  font-size: 11px;
+  font-size: 14px;
   color: #F8EFDB;
 }
 
@@ -267,7 +267,7 @@ html {
 .footer-logo {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .footer-logo img {
@@ -277,7 +277,7 @@ html {
 .footer-rights{
   color: #B29660;
   font-family: 'Quicksand';
-  font-size: 8px;
+  font-size: 11px;
   text-align: center;
 }
 
