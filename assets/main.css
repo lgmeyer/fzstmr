@@ -122,8 +122,10 @@ html {
 }
 
 .first-slide, .second-slide, .third-slide, .fourth-slide, .fifth-slide{
-  background-size: cover;
   background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  background-size: cover;
 }
 
 .first-slide {
@@ -151,7 +153,7 @@ html {
   display: flex;
   font-size: 200%;
   justify-content: center;
-  padding: 50px 0;
+  padding: 90px 0;
 }
 
 .c-carousel__slide:not(:first-child) {
