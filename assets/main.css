@@ -112,52 +112,49 @@ html {
   padding-bottom: 5px;
 }
 
-.carroussel-container {
-  width: 100%;
-  background-color: #f6d891;
+.slider {
+  height: 349px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
-.c-carousel__slides {
-  max-width: 500px;
-}
-
-.first-slide, .second-slide, .third-slide, .fourth-slide, .fifth-slide{
-  background-repeat: no-repeat;
-  height: 90px;
-  width: 90px;
-  background-size: cover;
-}
-
-.first-slide {
-  background-image: url("images/sld-fazenda.jpg");
-}
-
-.second-slide {
-  background-image: url("images/sld-fazenda2.jpg");
-}
-
-.third-slide {
-  background-image: url("images/sld-fazenda3.jpg");
-}
-
-.fourth-slide {
-  background-image: url("images/sld-fazenda4.jpg");
-}
-
-.fifth-slide {
-  background-image: url("images/sld-fazenda5.jpg");
-}
-
-.c-caroussel__slide {
-  align-items: center;
+.slide-track {
   display: flex;
-  font-size: 200%;
-  justify-content: center;
-  padding: 90px 0;
+  width: 6000px;
+  animation: scroll 25s linear infinite;
 }
 
-.c-carousel__slide:not(:first-child) {
-  border-left: 1px solid blue;
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-thin {
+  height: 200px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-large {
+  height: 200px;
+  width: 615px;
+  display: flex;
+  align-items: center;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px *10));
+  }
 }
 
 .production-container {
