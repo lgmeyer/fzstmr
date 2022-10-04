@@ -118,6 +118,8 @@ html {
   position: relative;
   display: grid;
   place-items: center;
+  max-width: 500px;
+  overflow: hidden;
 }
 
 .slide-track {
