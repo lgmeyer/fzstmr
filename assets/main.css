@@ -33,15 +33,17 @@ html {
   margin: 0 auto;
 }
 
-
-
 .header-container {
   background-color: #FFFAEE;
   padding: 15px 15px 0;
   min-width: 325px;
 }
 
-
+@media (min-width:815px) {
+  .header-container {
+    padding: 15px 15px 20px;
+  }
+}
 
 .header-wrapper {
   display: flex;
@@ -85,7 +87,6 @@ html {
   }
 }
 
-
 .header-menu li a {
   color: #9C8034;
   font-family: 'Domine';
@@ -104,22 +105,39 @@ html {
   cursor: pointer;
 }
 
+
 .picture-container {
   width: 100%;
   min-height: 400px;
   background-image: url("images/fazenda.jpg");
   background-size: cover;
   margin-bottom: -25px;
+  min-width: 325px;
 }
 
 .history-container {
   width: 100%;
   background-color: #193A20;
   padding-bottom: 20px;
+  min-width: 325px;
 }
 
 .history-wrapper {
   padding: 0 30px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+@media (min-width:815px) {
+  .history-wrapper {
+    max-width: 600px;
+  }
+}
+
+@media (min-width:1200px) {
+  .history-wrapper {
+    max-width: 800px;
+  }
 }
 
 .history-wrapper h2 {
@@ -132,6 +150,14 @@ html {
   text-align: center;
 }
 
+@media (min-width:815px) {
+  .history-wrapper h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 80px 0 30px;
+  }
+}
+
 .history-wrapper p {
   font-family: 'Quicksand';
   color: white;
@@ -140,6 +166,15 @@ html {
   line-height: 20px;
   padding-bottom: 5px;
 }
+
+@media (min-width:815px) {
+  .history-wrapper p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+
 
 .slider {
   height: 349px;
