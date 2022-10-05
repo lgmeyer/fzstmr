@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&family=Quicksand:wght@500&display=swap');
 
-
 body {
   height: 100%;
   margin: 0;
@@ -172,50 +171,62 @@ html {
   }
 }
 
-.slider {
-  height: 349px;
-  margin: auto;
-  position: relative;
-  display: grid;
-  place-items: center;
-  max-width: 500px;
-  overflow: hidden;
-  min-width: 325px;
-}
-
-.slide-track {
-  display: flex;
-  width: 6000px;
-  animation: scroll 25s linear infinite;
-}
-
-.slide {
-  height: 200px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-}
-
-.slide-thin {
-  height: 200px;
-  width: 190px;
-  display: flex;
-  align-items: center;
-}
-
-.slide-large {
-  height: 200px;
-  width: 615px;
-  display: flex;
-  align-items: center;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+@media (min-width:815px) {
+  .slider {
+    height: 349px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    min-width: 325px;
   }
-  100% {
-    transform: translateX(calc(-250px *10));
+
+  .slide-track {
+    display: flex;
+    width: 6000px;
+    animation: scroll 25s linear infinite;
+  }
+
+  .slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-thin {
+    height: 200px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-large {
+    height: 200px;
+    width: 615px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-double {
+    display: block;
+  }
+
+
+  .slide-double-item {
+    height: 50%;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px *10));
+    }
   }
 }
 
@@ -224,7 +235,7 @@ html {
   min-width: 325px;
 }
 
-.production-wrapper{
+.production-wrapper {
   display: block;
   margin: 0 auto;
   max-width: 400px;
@@ -332,7 +343,7 @@ html {
   }
 }
 
-.footer-contact{
+.footer-contact {
   padding-bottom: 50px;
 }
 
@@ -391,7 +402,6 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 
 @media (min-width:815px) {
   .footer-contact--cellphone::before {
