@@ -46,12 +46,12 @@ html {
 }
 
 .lenguage-area__pt-pt, .lenguage-area__pt-en {
-  margin-right: 8px;
+  margin-right: 6px;
   cursor: pointer;
 }
 
 .lenguage-area__split {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .lenguage-area__en-pt, .lenguage-area__en-en {
@@ -69,7 +69,17 @@ html {
   .header-container {
     padding: 15px 15px 20px;
   }
+
 }
+@media (max-width:815px) {
+  .lenguage-area {
+    padding: 10px 0;
+  }
+  .lenguage-area__en-pt, .lenguage-area__en-en {
+    margin-right: 0;
+  }
+}
+
 
 .header-wrapper {
   display: flex;
