@@ -418,31 +418,36 @@ html {
 }
 
 .footer-contact--data {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: 'Quicksand';
   color: #F8EFDB;
 }
 
 @media (max-width:350px) {
   .footer-contact--mail {
-    margin-top: 8px;
     margin-left: 2px;
   }
 }
 
-@media (min-width:815px) {
-  .footer-contact--data {
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .footer-contact--cellphone, .footer-contact--mail, .footer-contact--location {
-  display: flex;
   padding-left: 17px;
   position: relative;
-  color: #f8efdb
+  color: #f8efdb;
+}
+
+.footer-contact--mail {
+  min-width: 230px;
+  margin-bottom: 8px;
+}
+
+.footer-contact--location {
+  min-width: 150px;
+}
+.footer-contact--cellphone {
+  margin-bottom: 8px;
+  min-width: 150px;
 }
 
 @media (min-width:815px) {
@@ -475,37 +480,59 @@ html {
   content: "";
   width: 15px;
   height: 15px;
-  top: 3px;
+  top: 5px;
   left: -3px;
   background-image: url("images/mail.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.footer-contact--location a {
-  color: #f8efdb
-}
 
 .footer-contact--location::before {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
-  top: 0px;
-  left: -4px;
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: -3px;
   background-image: url("images/location.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 @media (min-width:815px) {
+  .footer-contact--location::before {
+    width: 23px;
+    height: 23px;
+    left: -9px;
+    top: -4px;
+  }
+}
+
+
+@media (min-width:815px) {
   .footer-contact--mail::before {
     width: 23px;
     height: 23px;
     left: -12px;
+    top: 3px;
   }
 }
-    
+
+
+@media (max-width: 1200px) {
+  .footer-contact--location {
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 814px) {
+  .footer-contact--location {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
 .footer-logo {
   display: flex;
   justify-content: center;
