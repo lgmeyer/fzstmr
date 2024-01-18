@@ -17,9 +17,9 @@
         </div>
         <div class="header-menu">
           <ul>
-            <li><a href="#history">História</a></li>
-            <li><a href="#production">Produção</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#producao">Produção</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
           <div class="lenguage-area">
             <div class="lenguage-area__pt-pt bold"> PT </div>
@@ -33,7 +33,7 @@
     <div class="picture-container">
     </div>
 
-    <div id="history" class="history-container">
+    <div id="historia" class="history-container">
       <div class="history-wrapper">
         <h2> History </h2>
         <p> During the XIX and XX Century coffee and railroads expanded together. It was so relevant that coffee plantation regions were named after the railroads that passed by them. The railroad of Paulista Railways Company formed the region of Marília. Therefore it was, and still is known as Paulista Region.</p>
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div id="production" class="production-container">
+    <div id="producao" class="production-container">
       <div class="production-wrapper">
         <div class="production-text"> 
           <h2>Production​ ​and​ ​postharvest</h2>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div id="contact" class="footer-container">
+    <div id="contato" class="footer-container">
       <div class="footer-wrapper">
         <div class="footer-contact">
           <div class="footer-contact--title">
@@ -184,5 +184,13 @@
 </body>
 <script>
   console.log('hello');
+  document.querySelector('.lenguage-area__pt-en').addEventListener('click', () => {
+    document.querySelector('.portuguese-page').classList.remove('hide-element');
+    document.querySelector('.english-page').classList.add('hide-element');
+  });
+  document.querySelector('.lenguage-area__en-pt').addEventListener('click', () => {
+    document.querySelector('.portuguese-page').classList.add('hide-element');
+    document.querySelector('.english-page').classList.remove('hide-element');
+  });
 </script>
 </html>
