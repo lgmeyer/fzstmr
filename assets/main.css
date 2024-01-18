@@ -27,6 +27,38 @@ html {
   scroll-behavior: smooth;
 }
 
+.hide-element {
+  display: none;
+}
+
+.lenguage-area {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #FFFAEE;
+  font-family: 'Domine';
+  font-size: 14px;
+  color: #9C8034;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.lenguage-area__pt-pt, .lenguage-area__pt-en {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.lenguage-area__split {
+  margin-right: 5px;
+}
+
+.lenguage-area__en-pt, .lenguage-area__en-en {
+  margin-right: 9px;
+  cursor: pointer;
+}
+
 .header-container {
   background-color: #FFFAEE;
   padding: 15px 15px 0;
