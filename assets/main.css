@@ -431,7 +431,7 @@ html {
   }
 }
 
-.footer-contact--cellphone, .footer-contact--mail, .footer-contact--location {
+.footer-contact--cellphone, .footer-contact--cellphone-jp, .footer-contact--mail, .footer-contact--location, .footer-contact--location-jp {
   padding-left: 17px;
   position: relative;
   color: #f8efdb;
@@ -442,21 +442,21 @@ html {
   margin-bottom: 8px;
 }
 
-.footer-contact--location {
+.footer-contact--location, .footer-contact--location-jp {
   min-width: 150px;
 }
-.footer-contact--cellphone {
+.footer-contact--cellphone, .footer-contact--cellphone-jp {
   margin-bottom: 8px;
   min-width: 150px;
 }
 
 @media (min-width:815px) {
-  .footer-contact--cellphone {
+  .footer-contact--cellphone, .footer-contact--cellphone-jp {
     padding-left: 28px;
   }
 }
 
-.footer-contact--cellphone::before {
+.footer-contact--cellphone::before, .footer-contact--cellphone-jp::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -469,7 +469,7 @@ html {
 }
 
 @media (min-width:815px) {
-  .footer-contact--cellphone::before {
+  .footer-contact--cellphone::before, .footer-contact--cellphone-jp::before {
     width: 21px;
     height: 21px;
   }
@@ -488,7 +488,7 @@ html {
 }
 
 
-.footer-contact--location::before {
+.footer-contact--location::before, .footer-contact--location-jp::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -508,6 +508,14 @@ html {
     top: -4px;
   }
 }
+@media (min-width:815px) {
+  .footer-contact--location-jp::before {
+    width: 23px;
+    height: 32px;
+    left: -19px;
+    top: 0px;
+  }
+}
 
 
 @media (min-width:815px) {
@@ -521,14 +529,14 @@ html {
 
 
 @media (max-width: 1200px) {
-  .footer-contact--location {
+  .footer-contact--location, .footer-contact--location-jp {
     margin-top: 15px;
     margin-left: 8px;
   }
 }
 
 @media (max-width: 814px) {
-  .footer-contact--location {
+  .footer-contact--location, .footer-contact--location-jp {
     margin-top: 0;
     margin-left: 0;
   }
@@ -537,6 +545,7 @@ html {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+  margin-top: 40px;
 }
 
 .footer-logo img {
@@ -599,4 +608,38 @@ span.text-bold {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.location-title, .location-title_jp {
+  color: #f8efdb;
+  font-family: 'Domine', serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.location-title {
+  margin-bottom: 20px;
+}
+
+.location-subtitle {
+  margin-bottom: 20px;
+}
+
+.location-subtitle_jp {
+  color: #f8efdb;
+  font-family: 'Domine', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.location-title_jp {
+  margin-top: 80px;
+}
+
+.footer-contact--location-jp, .footer-contact--cellphone-jp {
+  line-height: 20px;
+}
+
+.footer-contact--cellphone-jp {
+  min-width: 300px
 }
