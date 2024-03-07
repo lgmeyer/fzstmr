@@ -211,7 +211,7 @@ html {
 @media (min-width:815px) {
   .history-wrapper p {
     font-size: 17px;
-    line-height: 26px;
+    line-height: 22px;
   }
 }
 
@@ -651,7 +651,7 @@ span.text-bold {
   font-size: 22px;
   margin-bottom: 5px;
   margin-top: 50px;
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .japan-area {
