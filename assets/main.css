@@ -634,7 +634,7 @@ span.text-bold {
 .location-title {
   color: #f8efdb;
   font-family: 'Domine', serif;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
@@ -648,9 +648,9 @@ span.text-bold {
 .location-title-jp {
   color: #f8efdb;
   font-family: 'Domine', serif;
-  font-size: 20px;
-  margin-bottom: 15px;
-  margin-top: 60px;
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 50px;
   line-height: 30px;
 }
 
@@ -690,5 +690,14 @@ span.text-bold {
 .japan-area {
   .footer-contact--location {
     line-height: 21px;
+  }
+}
+
+@media (max-width:815px) {
+  .location-title, .location-title-jp {
+    font-size: 18px;
+  } 
+  .location-title-jp {
+    margin-bottom: 5px;
   }
 }
